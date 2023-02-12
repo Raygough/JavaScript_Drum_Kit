@@ -27,11 +27,17 @@ body, html {
   width: 10rem;
   text-align: center;
   background-color: #33333350;
+  transition: all 0.7s;
 }
 
 .inputs > .key > span {
   color: yellow;
   font-size: 0.7em;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: black;
 }
 
 kbd {
