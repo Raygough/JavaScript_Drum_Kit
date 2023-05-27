@@ -1,29 +1,40 @@
-body {
-  font-size: 10px;
-  background-color: #ffffff50;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
+html{
+  height: 100%;
 }
 
-body img {
-  width: 100%;
-  position: absolute;
+body {
+  margin: auto;
+  font-size: 10px;
+  background-color: #4f4f4f;
+  font-family: sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro{
+  margin: 0;
+  height: 100%;
+  background-color: #4652ae;
+}
+
+.intro h1, p{
+  text-align: center;
+  color: white;
+}
+
+.intro p{
+  font-size: 30px;
 }
 
 .inputs {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  position: absolute;
+  grid-template-columns: repeat(5, 1fr);
   row-gap: 10px;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
+  height: auto;
+  padding: 10px;
+  height: 500px;
 }
 
 .inputs > * {
@@ -31,14 +42,16 @@ body img {
   border-radius: 5px;
   font-size: 2em;
   text-align: center;
-  background-color: #333333;
+  background-color: #ffffff;
   transition: all 0.7s;
-  width: 50%;
+  width: 70%;
 }
-
+ 
 .inputs > .key > span {
-  color: yellow;
+  color: #4652ae;
   font-size: 0.7em;
+  font-weight: normal;
+  transition: all 0.5s;
 }
 
 .playing {
@@ -47,9 +60,44 @@ body img {
   box-shadow: 0 0 200px 20px black;
 }
 
-kbd {
-  display: block;
-  color: white;
-  font-size: 3rem;
+.inputs > .playing > span {
+  color: red;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
+kbd {
+  display: block;
+  color: #333333;
+  font-size: 3rem;
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #4652ae;
+  color: white;
+  padding: 20px;
+  height: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.author-info {
+  flex: 1;
+}
