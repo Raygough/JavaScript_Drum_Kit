@@ -46,6 +46,10 @@ body {
   transition: all 0.7s;
   width: 70%;
 }
+
+.inputs > *:hover{
+  cursor: pointer;
+}
  
 .inputs > .key > span {
   color: #4652ae;
@@ -106,6 +110,6 @@ footer {
 @media screen and (max-width: 600px){
   .inputs{
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 10px;;
+    row-gap: 10px;
   }
 }
