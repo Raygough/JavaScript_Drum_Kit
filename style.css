@@ -14,7 +14,7 @@ body {
 
 .intro{
   margin: 0;
-  height: 100%;
+  max-height: 100%;
   background-color: #4652ae;
 }
 
@@ -34,7 +34,7 @@ body {
   place-items: center;
   height: auto;
   padding: 10px;
-  height: 500px;
+  height: 60%;
 }
 
 .inputs > * {
@@ -81,7 +81,7 @@ footer {
   background-color: #4652ae;
   color: white;
   padding: 20px;
-  height: 100%;
+  max-height: 100%;
 }
 
 .footer-content {
@@ -97,19 +97,30 @@ footer {
 }
 
 .social-links img {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   margin-right: 10px;
 }
 
 .author-info {
   flex: 1;
+  font-size: 20px;
 }
 
 
 @media screen and (max-width: 600px){
-  .inputs{
+
+  .inputs {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
+  }
+
+  .social-links img{
+    width: 90px;
+    height: 90px;
+  }
+
+  .author-info{
+    font-size: 10px;
   }
 }
