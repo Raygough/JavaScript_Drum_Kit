@@ -1,4 +1,5 @@
 # JavaScript Drum Kit
+# JavaScript Drum Kit
 
 This is a simple website that allows you to play drum sounds by pressing keys on your keyboard. Each key from "a" to "p" corresponds to a different drum sound.
 
